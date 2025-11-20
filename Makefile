@@ -1,5 +1,5 @@
 CC = gcc
-#LINKERS = -lmath
+LINKERS = -lm -lGL -lglfw -lGLEW
 
 main:
-	$(CC)  -o run main.c 
+	$(CC) -o client main.c $(LINKERS) 
