@@ -1,5 +1,5 @@
 CC = gcc
-LINKERS = -lm -lGL -lglfw -lGLEW
+LINKERS = -lm -lGL -lglfw -Iinclude 
 
 main:
-	$(CC) -o client main.c $(LINKERS) 
+	$(CC) -o client main.c glad.c $(LINKERS) 
