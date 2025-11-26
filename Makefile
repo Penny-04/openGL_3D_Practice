@@ -1,5 +1,6 @@
-CC = gcc
-LINKERS = -lm -lGL -lglfw -Iinclude 
+all:
+	mkdir -p build
+	cd build && cmake .. && make
 
-main:
-	$(CC) -o client main.c glad.c $(LINKERS) 
+clean:
+	rm -rf build
