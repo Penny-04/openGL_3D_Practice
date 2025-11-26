@@ -4,6 +4,7 @@ project(client LANGUAGES C CXX)
 # Set C++ standard (change to 20 if you need)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 # Include directory
 include_directories(include)
